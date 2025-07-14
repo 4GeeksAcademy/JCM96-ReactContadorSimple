@@ -1,8 +1,7 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Asegúrate de importar Bootstrap CSS si no lo has hecho en otro lugar
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 
 const SecondsCounter = (props) => {
-    // Función auxiliar para renderizar cada dígito o el icono como una "tarjeta"
     const renderDigit = (value, isIcon = false) => (
         <div className="p-3 bg-dark text-white mx-1 rounded" style={{ fontSize: '4rem', lineHeight: '1', minWidth: '80px' }}>
             {isIcon ? <i className={value}></i> : value}
